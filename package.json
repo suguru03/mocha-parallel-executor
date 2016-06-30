@@ -1,0 +1,19 @@
+{
+  "name": "mocha-parallel-executor",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mocha"
+  ],
+  "author": "Suguru Motegi",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.13.1",
+    "mocha": "^2.5.3",
+    "neo-async": "^2.0.0-rc.1"
+  }
+}
