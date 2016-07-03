@@ -15,6 +15,7 @@ const opts = {
   // mocha config
   timeout: argv.timeout || 2000,
   // other opts
+  root: root,
   concurrency: concurrency === false ? false : concurrency || os.cpus().length,
   testdir: argv.dir || path.resolve(root, 'test'),
   file: argv.file && path.resolve(root, argv.file),
