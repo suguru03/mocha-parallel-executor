@@ -9,12 +9,13 @@ const argv = require('minimist')(process.argv.slice(2));
 const executor = require('../');
 
 const root = argv.root || process.env.PWD;
+const concurrency = argv.c !== undefined ? argv.c : argv.concurrency !== undefined ? argv.concurrency : argv.limit;
 
 const opts = {
   // mocha config
   timeout: argv.timeout || 2000,
   // other opts
-  limit: argv.limit === false ? false : argv.limit || os.cpus().length,
+  concurrency: concurrency === false ? false : concurrency || os.cpus().length,
   testdir: argv.dir || path.resolve(root, 'test'),
   file: argv.file && path.resolve(root, argv.file),
   files: argv.files

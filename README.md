@@ -1,6 +1,6 @@
 # mocha-parallel-executor
 
-This module supports test executing in parallel.
+This module supports executing test in parallel.
 
 ## Installation
 
@@ -19,6 +19,8 @@ exec(); // resolve path automatically
 
 ```bash
 $ ./node_modules/.bin/mocha-p
+
+$ ./node_modules/.bin/mocha-p --file ./test/xxx.js
 ```
 
 ### example
