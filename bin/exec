@@ -1,6 +1,23 @@
 #!/usr/bin/env node
 'use strict';
 
+const os = require('os');
+const path = require('path');
+
+const argv = require('minimist')(process.argv.slice(2));
+
 const executor = require('../');
 
-executor();
+const root = argv.root || process.env.PWD;
+
+const opts = {
+  // mocha config
+  timeout: argv.timeout || 2000,
+  // other opts
+  limit: argv.limit === false ? false : argv.limit || os.cpus().length,
+  testdir: argv.dir || path.resolve(root, 'test'),
+  file: argv.file && path.resolve(root, argv.file),
+  files: argv.files
+};
+
+executor(opts);
