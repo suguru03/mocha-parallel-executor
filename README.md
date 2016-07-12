@@ -27,12 +27,17 @@ $ ./node_modules/.bin/mocha-p --file ./test/xxx.js
 
 |option|description|
 |---|---|
+|debug|be able to see all logs but don't write specs|
 |timeout|mocha' option. (default:2000ms)|
 |concurrency|If `false` were specified, all test cases will be executed in parallel. (default: os.cpus().length)|
 |root|target repository path. (default: process.env.PWD)|
 |dir|target test directory (default: `./test`)|
 |file|a target file|
 |files|some target files|
+|before|execute function to edit environment|
+|watch|to see mocha json logs|
+|error|to see error logs|
+|after|execute function to edit result|
 
 ### example
 
