@@ -16,8 +16,8 @@
   },
   "dependencies": {
     "dcp": "^0.1.3",
-    "lodash": "^4.13.1",
-    "mocha": "^2.5.3",
-    "neo-async": "^2.0.0-rc.1"
+    "lodash": "^4.14.1",
+    "mocha": "^3.0.0",
+    "neo-async": "^2.0.0"
   }
 }
