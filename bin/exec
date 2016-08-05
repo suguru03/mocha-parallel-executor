@@ -19,7 +19,9 @@ const opts = {
   concurrency: concurrency === false ? false : concurrency || os.cpus().length,
   testdir: argv.dir || path.resolve(root, 'test'),
   file: argv.file && path.resolve(root, argv.file),
-  files: argv.files
+  files: argv.files,
+  retry: argv.retry || 0,
+  delay: argv.delay || 0
 };
 
 executor(opts);

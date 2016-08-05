@@ -34,6 +34,12 @@ $ ./node_modules/.bin/mocha-p --file ./test/xxx.js
 |dir|target test directory (default: `./test`)|
 |file|a target file|
 |files|some target files|
+|delay|to wait next test|
+
+__extra options for executor__
+
+|option|description|
+|---|---|
 |before|execute function to edit environment|
 |watch|to see mocha json logs|
 |error|to see error logs|
