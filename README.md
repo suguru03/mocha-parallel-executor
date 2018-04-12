@@ -18,9 +18,9 @@ exec(); // resolve path automatically
 ### bash
 
 ```bash
-$ ./node_modules/.bin/mocha-p
+$ npx mocha-p
 
-$ ./node_modules/.bin/mocha-p --file ./test/xxx.js
+$ npx mocha-p --file ./test/xxx.js
 ```
 
 ## options
