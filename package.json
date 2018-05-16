@@ -1,6 +1,6 @@
 {
   "name": "mocha-parallel-executor",
-  "version": "0.3.2",
+  "version": "0.3.1",
   "description": "",
   "main": "index.js",
   "scripts": {
