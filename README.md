@@ -21,6 +21,8 @@ exec(); // resolve path automatically
 $ npx mocha-p
 
 $ npx mocha-p --file ./test/xxx.js
+
+$ npx mocha-p --files ./**/*.test.js
 ```
 
 ## options
