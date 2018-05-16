@@ -1,6 +1,6 @@
 {
   "name": "mocha-parallel-executor",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "dcp": "^0.1.4",
+    "glob": "^7.1.2",
     "lodash": "^4.14.1",
     "mocha": "^3.0.0",
     "neo-async": "^2.0.0"
